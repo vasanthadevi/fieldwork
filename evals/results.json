@@ -1,0 +1,87 @@
+{
+  "bugs_seeded": 10,
+  "bugs_caught": 10,
+  "clean_checks": 24,
+  "false_alarms": 0,
+  "questions": 8,
+  "driver": "scripted",
+  "bugs": [
+    {
+      "bug": "rounded-values",
+      "expected": "precision_mismatch",
+      "caught": true,
+      "failing_checks": 3,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "dropped-last-row",
+      "expected": "missing_row",
+      "caught": true,
+      "failing_checks": 6,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "swapped-columns",
+      "expected": "column_mismatch",
+      "caught": true,
+      "failing_checks": 5,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "reversed-order",
+      "expected": "order_mismatch",
+      "caught": true,
+      "failing_checks": 5,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "null-as-zero",
+      "expected": "null_mismatch",
+      "caught": true,
+      "failing_checks": 1,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "locale-decimal",
+      "expected": "format_mismatch",
+      "caught": true,
+      "failing_checks": 4,
+      "unexpected_kinds": [
+        "value_mismatch"
+      ]
+    },
+    {
+      "bug": "row-badge-off",
+      "expected": "count_mismatch",
+      "caught": true,
+      "failing_checks": 8,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "summary-wrong",
+      "expected": "summary_mismatch",
+      "caught": true,
+      "failing_checks": 8,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "chart-wrong-scale",
+      "expected": "chart_mismatch",
+      "caught": true,
+      "failing_checks": 4,
+      "unexpected_kinds": []
+    },
+    {
+      "bug": "stale-answer",
+      "expected": "stale_answer",
+      "caught": true,
+      "failing_checks": 7,
+      "unexpected_kinds": [
+        "chart_mismatch",
+        "column_mismatch",
+        "count_mismatch",
+        "summary_mismatch"
+      ]
+    }
+  ]
+}

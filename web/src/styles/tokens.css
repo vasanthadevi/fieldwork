@@ -1,0 +1,29 @@
+:root {
+  --bg: oklch(0.985 0.004 265);
+  --panel: oklch(1 0 0);
+  --panel-2: oklch(0.955 0.008 265);
+  --ink: oklch(0.2 0.02 265);
+  --ink-2: oklch(0.42 0.02 265);
+  --line: oklch(0.2 0.02 265 / 13%);
+  --teal: oklch(0.47 0.09 190);
+  --violet: oklch(0.48 0.17 292);
+  --fail: oklch(0.52 0.2 25);
+  --pass: oklch(0.47 0.12 160);
+  --glow: oklch(0.5 0.1 190 / 12%);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: oklch(0.14 0.015 268);
+    --panel: oklch(0.18 0.018 268);
+    --panel-2: oklch(0.225 0.02 268);
+    --ink: oklch(0.96 0.006 265);
+    --ink-2: oklch(0.75 0.02 265);
+    --line: oklch(1 0 0 / 11%);
+    --teal: oklch(0.86 0.11 185);
+    --violet: oklch(0.78 0.12 292);
+    --fail: oklch(0.72 0.17 22);
+    --pass: oklch(0.82 0.14 160);
+    --glow: oklch(0.86 0.11 185 / 11%);
+  }
+}
