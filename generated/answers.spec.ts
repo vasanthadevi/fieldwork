@@ -53,7 +53,7 @@ test("missing-composers", async ({ page }) => {
   await page.getByTestId('query-input').press('Enter')
   const table = page.getByTestId('result-table')
   await expect(table.locator('th')).toHaveText(["name", "composer"])
-  await expect(table.locator('td')).toHaveText(["...And Found", "null", "...In Translation", "null", ".07%", "null", "\"?\"", "null", "(I Can't Help) Falling In Love With You", "null"])
+  await expect(table.locator('td')).toHaveText(["\"?\"", "null", "#9 Dream", "null", "(I Can't Help) Falling In Love With You", "null", "...And Found", "null", "...In Translation", "null"])
   await expect(page.getByTestId('row-count')).toHaveText("5 rows")
   await expect(page.getByTestId('explanation')).toHaveText("Found 5 results.")
 })

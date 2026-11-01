@@ -2,6 +2,7 @@
 
 import base64
 import json
+import os
 import re
 import time
 from contextlib import asynccontextmanager
@@ -14,7 +15,9 @@ EXTRACT_JS = (Path(__file__).parent / "extract.js").read_text()
 SERVER = StdioServerParameters(
     command="npx",
     args=["-y", "@playwright/mcp@0.0.83", "--headless", "--isolated",
-          "--allowed-origins", "http://127.0.0.1:4400", "--viewport-size", "1180x900"],
+          "--allowed-origins", "http://127.0.0.1:4400", "--viewport-size", "1180x900",
+          *os.environ.get("MCP_EXTRA_ARGS", "").split()],
+    env={**os.environ},
 )
 
 
