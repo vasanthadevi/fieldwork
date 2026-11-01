@@ -6,7 +6,7 @@ Fieldwork is a QA agent for natural-language analytics apps. Through Playwright 
 real browser, reads what the user actually sees, and checks every table cell, chart bar, row count and written summary
 against gold SQL results from the database. A replay site shows each run, with the page and the agent's view side by side.
 
-See [evals/REPORT.md](evals/REPORT.md) for the current score.
+**[Watch the recorded runs](https://vasanthadevi.github.io/fieldwork/)** · [Evaluation report](evals/REPORT.md)
 
 ## How it works
 
